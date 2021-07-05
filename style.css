@@ -1,0 +1,99 @@
+#entete
+{
+    display: flex;
+}
+
+body
+{
+    width: 900px;
+	margin: auto;
+}
+
+nav
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: blue;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+#hebergement
+{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    background-color: #D0D3D4;
+    margin: 15px;
+    padding: 15px;
+}
+
+#populaires
+{
+    width: 30%;
+    display: flex;
+    background-color: #D0D3D4;
+}
+nav p
+{
+    padding: 2%;
+}
+
+nav p:hover
+{    
+    border-top: 1px blue solid;
+}
+
+nav p a
+{
+    text-decoration: none;
+}
+
+#filtre ul
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer
+{
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    background-color: #D0D3D4;
+    margin: 15px;
+}
+
+
+
+
+/*
+
+#section_hebergement_populaires
+{
+    display: flex;
+}
+
+#phtos_haut
+{
+    display: flex;
+}
+
+#photo_bas
+{
+    display: flex;
+}
+
+*/
+
+#formulaire
+{
+    display: flex;
+}
