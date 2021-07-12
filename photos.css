@@ -1,0 +1,58 @@
+.photos_hebergement 
+{
+    width: 75%;
+    height: 40%;
+    padding: 1%;
+    background-color: white;
+    border-radius: 10%;
+}
+
+.photos_hebergement img
+{
+    width: 100%;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+
+}
+
+.photos_populaires
+{
+    width: 90%;
+    height: 20%;
+    padding: 1%;
+    margin: 1%;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.photos_populaires img
+{
+    width: 45%;
+    height: 100%;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10% ;
+    padding: 1%;
+    vertical-align: text-top;
+}
+
+.photos_activte
+{
+    width: 100%;
+    padding-bottom: 1%;
+    box-shadow: 2px 2px 2px black;
+}
+
+.photos_activte img
+{
+    width: 100%;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+
+ /*
+.petites_photos
+{
+    width: 20%;
+}
+ */
+

@@ -1,0 +1,155 @@
+#entete
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 1%;
+}
+
+body
+{
+	margin: auto;
+}
+
+nav
+{
+    display: flex;
+    flex-direction: row;
+    color: #0065FC;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+#filtre
+{
+    margin: 1%;
+}
+
+form
+{
+    display: flex;
+}
+
+#filtre ul
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+#filtre i
+{
+    width: 4%;
+    height: 4%;
+    background-color: blue;
+}
+
+#hebergement
+{
+    width: 80%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    margin: 1%;
+    padding: 1%;
+    border-radius: 2%;
+}
+
+#phtos_haut
+{
+    display: flex;
+}
+
+#photo_bas
+{
+    display: flex;
+}
+
+/*
+#populaires i
+{
+    display: flex;
+    align-items: flex-end;
+}
+*/
+
+#populaires
+{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    margin: 1%;
+    background-color: #F2F2F2;
+    border-radius: 2%;
+}
+
+#photos_activite_global
+{
+    width: 100%;
+    margin: 1%;
+    padding: 1%;
+    display: flex;
+}
+
+nav p
+{
+    padding: 2%;
+}
+
+nav p:hover
+{
+    border-top: 1px #0065FC solid;
+}
+
+nav p a
+{
+    text-decoration: none;
+}
+
+#section_hebergement_populaires
+{
+    display: flex;
+}
+
+#formulaire
+{
+    display: flex;
+}
+
+#activite
+{
+    width: 100%;
+    height: 60%;
+    margin: 1%;
+    padding: 1%;
+}
+
+footer
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+    padding: 1%;
+}
+
+@media screen and (max-width: 1000px)
+{
+    header nav
+    {
+        flex-direction: column;
+    }
+
+    #phtos_haut
+    {
+        flex-direction: column;
+    }
+
+    #photo_bas
+    {
+        flex-direction: column;
+    }
+}
