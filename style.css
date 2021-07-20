@@ -29,6 +29,16 @@ form
     display: flex;
 }
 
+form i
+{
+    width: auto;
+    height: auto;
+    border: 3px #F2F2F2 solid;
+    align-items: center;
+    border-radius: 10%;
+    background-color: #F2F2F2;
+}
+
 #filtre
 {
     display: flex;
@@ -38,13 +48,12 @@ form
 
 #filtre p
 {
-    width: 200px;
     height: 50px;
     border: 2px #F2F2F2 solid;
     display: flex;
     align-items: center;
     margin-right: 1%;
-    border-radius: 2rem;
+    border-radius: 2em;
     margin-bottom: 1%;
 }
 
@@ -133,7 +142,26 @@ footer
 {
     header nav
     {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #filtre
+    {
         flex-direction: column;
+    }
+
+    #section_hebergement_populaires
+    {
+        flex-direction: column;
+    }
+
+    #hebergement, #activite
+    {
+        width: 100%;
+        flex-direction: column;
+        padding: 1%;
     }
 
     #phtos_haut
