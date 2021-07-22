@@ -28,6 +28,7 @@ form
 {
     display: flex;
     align-items: center;
+    display: block;
 }
 
 form i
@@ -47,40 +48,47 @@ form i
 {
     display: flex;
     align-items: flex-start;
+    align-items: center;
 }
 
-#filtre a 
+.categorie_filtre 
 {
+    width: 175px;
     border: 2px #F2F2F2 solid;
-    display: flex;
-    align-items: center;
+    border-radius: 50px;
     margin: 1%;
-    border-radius: 100%;
-    padding: 1%;
-    display: inline-block;
-    background-color: #DEEBFF;
-}
-
-#filtre p
-{
-    border: 2px #F2F2F2 solid;
     display: flex;
     align-items: center;
-    display: inline-block;
-    border-top-right-radius: 35%;
-    border-bottom-right-radius: 35%;
-    margin-right: 2%;
-    padding: 1%;
 }
-
-#filtre i
+  
+.categorie_filtre a 
 {
-    color: blue;
+    display: block;
+    background: #DEEBFF;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.categorie_filtre p 
+{
+    width: 125px;
+    margin-right: 1%;
+    text-align: center;
+    cursor: pointer;
+}
+  
+.categorie_filtre i 
+{ 
+    color: blue; 
 }
 
 #hebergement
 {
-    width: 95%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2;
@@ -146,9 +154,14 @@ nav p a
 
 #encadre_activite
 {
-    width: 90%;
-    height: 50%;
+    width: 100%;
     display: flex;
+}
+
+.photo_sur_photo
+{
+    display: flex;
+    flex-direction: column;
 }
 
 footer
@@ -197,59 +210,5 @@ footer
 }
 
 
-#activite_test
-{
-    margin: 1%;
-    padding: 1%;
-    width: 95%;
-}
 
-#encadre_activite_test
-{
-    width: 100%;
-    display: flex;
-}
-
-
-.grandes_photos
-{
-    width: 100%;
-    padding: 1%;
-    /*border: 1px #F2F2F2 solid;
-    box-shadow: 0 2px 2px #f2f2f2; 
-*/
-}
-
-.grandes_photos img
-{
-    width: 100%;
-    height: 400px;
-    padding: 1%;
-    border-top-left-radius: 7%;
-    border-top-right-radius: 7%;
-}
-
-.petites_photos
-{
-    width: 100%;
-    padding: 1%;
-    border-bottom: 1px #F2F2F2 solid;
-    box-shadow: 0 2px 2px #f2f2f2;
-   
-}
-
-.petites_photos img
-{
-    width: 100%;
-    height : 150px;
-    padding: 1%;
-    border-top-left-radius: 7%;
-    border-top-right-radius: 7%;
-}
-
-.photo_sur_photo_test
-{
-    display: flex;
-    flex-direction: column;
-}
 
