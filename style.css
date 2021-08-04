@@ -24,24 +24,53 @@ ul
     list-style-type: none;
 }
 
-form
+#formulaire
 {
     display: flex;
-    align-items: center;
-    display: block;
+    /*
+    width: 30%;
+    border-top: 1px #F2F2F2 solid;
+    border-bottom: 1px #F2F2F2 solid;
+    border-radius: 50px;
+    */
+    margin: 1%;
+    align-items: center;  
+    width: 100%;
+    border-top-left-radius: 35%;
+    border-top-right-radius: 35%;
+    border-bottom-right-radius: 35%;
+    border-bottom-left-radius: 35%;
 }
 
 form i
 {
     border: 2px #F2F2F2 solid;
     display: flex;
-    align-items: center;
+    text-align: center;
     margin: 1%;
-    border-top-left-radius: 35%;
-    border-bottom-left-radius: 35%;
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%;
     padding: 1%;
     display: inline-block;
     background-color: #F2F2F2;
+}
+
+#localisation
+{
+    border: #F2F2F2 1px solid;
+    padding: 1%;
+    display: inline-block;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#recherche
+{
+    background-color: #0065FC;
+    padding: 1%;
+    display: inline-block;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%
 }
 
 #filtre
@@ -53,7 +82,7 @@ form i
 
 .categorie_filtre 
 {
-    width: 175px;
+    width: 185px;
     border: 2px #F2F2F2 solid;
     border-radius: 50px;
     margin: 1%;
@@ -83,7 +112,7 @@ form i
   
 .categorie_filtre i 
 { 
-    color: blue; 
+    color: #0065FC; 
 }
 
 #hebergement
@@ -95,6 +124,11 @@ form i
     margin: 1%;
     padding: 1%;
     border-radius: 2%;
+}
+
+.etoile_hebergement i
+{
+    color: #0065FC;
 }
 
 #photos_haut, #photos_bas
@@ -140,11 +174,6 @@ nav p a
     display: flex;
 }
 
-#formulaire
-{
-    display: flex;
-}
-
 #activite
 {
     margin: 1%;
@@ -155,6 +184,7 @@ nav p a
 #encadre_activite
 {
     width: 100%;
+    height: 500px;
     display: flex;
 }
 
@@ -162,6 +192,17 @@ nav p a
 {
     display: flex;
     flex-direction: column;
+}
+
+#activite figcaption
+{
+    text-align: center;
+}
+
+.col-4
+{
+    flex: 4;
+    margin: 1%;
 }
 
 footer
@@ -194,6 +235,7 @@ footer
     #hebergement, #activite
     {
         width: 100%;
+        display: flex;
         flex-direction: column;
         padding: 1%;
     }
