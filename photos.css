@@ -22,23 +22,25 @@
     padding: 1%;
     border-radius: 10px;
     background-color: white;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 }
 
 .photos_populaires img
 {
     width: 45%;
     height: 100%;
-    border-top-left-radius: 10%;
-    border-bottom-left-radius: 10%;
+    border-top-left-radius: 7%;
+    border-bottom-left-radius: 7%;
     vertical-align: text-top;
+    
 }
 
 .grandes_photos
 {
     width: 100%;
     height: 100%;
-    padding: 1%;
+    border-radius: 7%;
+    object-fit: cover;
 }
 
 .grandes_photos img
@@ -47,24 +49,22 @@
     height: 100%;
     border-top-left-radius: 7%;
     border-top-right-radius: 7%;
-    object-fit: cover;
+    
 }
 
 .petites_photos
 {
     width: 100%;
-    padding: 1%;
     object-fit: cover;
     box-shadow: 0 0 20px #0000002e;
-    border-bottom-left-radius: 7%;
-    border-bottom-right-radius: 7%;
+    border-radius: 7%;
 }
 
 .petites_photos img
 {
     width: 100%;
     height : 200px;
-    padding: 1%;
+    
     border-top-left-radius: 7%;
     border-top-right-radius: 7%;
 }

@@ -27,19 +27,11 @@ ul
 #formulaire
 {
     display: flex;
-    /*
-    width: 30%;
-    border-top: 1px #F2F2F2 solid;
-    border-bottom: 1px #F2F2F2 solid;
-    border-radius: 50px;
-    */
     margin: 1%;
     align-items: center;  
     width: 100%;
-    border-top-left-radius: 35%;
-    border-top-right-radius: 35%;
-    border-bottom-right-radius: 35%;
-    border-bottom-left-radius: 35%;
+    border-radius: 35%;
+    
 }
 
 form i
@@ -47,7 +39,8 @@ form i
     border: 2px #F2F2F2 solid;
     display: flex;
     text-align: center;
-    margin: 1%;
+    height: 15px;
+    
     border-top-left-radius: 20%;
     border-bottom-left-radius: 20%;
     padding: 1%;
@@ -62,6 +55,7 @@ form i
     display: inline-block;
     font-size: larger;
     font-weight: bold;
+    height: 15px;
 }
 
 #recherche
@@ -70,7 +64,9 @@ form i
     padding: 1%;
     display: inline-block;
     border-top-right-radius: 20%;
-    border-bottom-right-radius: 20%
+    border-bottom-right-radius: 20%;
+    border: none;
+   
 }
 
 #filtre
@@ -126,7 +122,7 @@ form i
     border-radius: 2%;
 }
 
-.etoile_hebergement i
+.etoiles i
 {
     color: #0065FC;
 }
@@ -152,6 +148,12 @@ form i
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.infos_populaire
+{
+    flex-direction: column;
+    margin: 2%;
 }
 
 nav p
@@ -196,7 +198,8 @@ nav p a
 
 #activite figcaption
 {
-    text-align: center;
+    padding: 5%;
+    font-weight: bold;
 }
 
 .col-4
