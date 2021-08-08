@@ -24,6 +24,21 @@ ul
     list-style-type: none;
 }
 
+nav p
+{
+    padding: 2%;
+}
+
+nav p:hover
+{
+    border-top: 1px #0065FC solid;
+}
+
+nav p a
+{
+    text-decoration: none;
+}
+
 #formulaire
 {
     display: flex;
@@ -61,11 +76,13 @@ form i
 #recherche
 {
     background-color: #0065FC;
+    color: white;
     padding: 1%;
     display: inline-block;
     border-top-right-radius: 20%;
     border-bottom-right-radius: 20%;
     border: none;
+    cursor: pointer;
    
 }
 
@@ -109,6 +126,11 @@ form i
 .categorie_filtre i 
 { 
     color: #0065FC; 
+}
+
+#section_hebergement_populaires
+{
+    display: flex;
 }
 
 #hebergement
@@ -156,25 +178,6 @@ form i
     margin: 2%;
 }
 
-nav p
-{
-    padding: 2%;
-}
-
-nav p:hover
-{
-    border-top: 1px #0065FC solid;
-}
-
-nav p a
-{
-    text-decoration: none;
-}
-
-#section_hebergement_populaires
-{
-    display: flex;
-}
 
 #activite
 {
@@ -216,21 +219,44 @@ footer
     padding: 1%;
 }
 
-@media screen and (max-width: 1000px)
+@media screen and (max-width: 1200px)
 {
+    body
+    {
+        width: 95%;
+        margin: 1%;
+    }
+
     header nav
     {
-        display: flex;
+        flex-direction: column;
+        
         justify-content: space-between;
         align-items: center;
     }
 
     #filtre
     {
-        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     #section_hebergement_populaires
+    {
+        flex-direction: column;  
+    }
+
+    #hebergement img
+    {
+        flex-direction: column;
+    }
+    
+    #populaires
+    {
+        order: 1;
+    }
+
+    #encadre_activite
     {
         flex-direction: column;
     }
@@ -238,20 +264,17 @@ footer
     #hebergement, #activite
     {
         width: 100%;
+        height: 100px;
         display: flex;
         flex-direction: column;
         padding: 1%;
     }
 
-    #phtos_haut
+    footer
     {
         flex-direction: column;
     }
 
-    #photo_bas
-    {
-        flex-direction: column;
-    }
 }
 
 
