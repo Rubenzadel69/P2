@@ -37,6 +37,8 @@ nav p:hover
 nav p a
 {
     text-decoration: none;
+    padding: 2rem;
+    font-weight: bold;
 }
 
 #formulaire
@@ -94,6 +96,7 @@ form i
     display: flex;
     align-items: flex-start;
     align-items: center;
+    margin-right: 2rem;
 }
 
 #liste_filtre
@@ -103,12 +106,15 @@ form i
 
 .categorie_filtre 
 {
-    width: 225px;
+    /*width: 225px;
+    margin: 1%;*/
     border: 2px #F2F2F2 solid;
-    border-radius: 50px;
-    margin: 1%;
+    border-radius: 2rem;
+    margin-right: 2rem;
     display: flex;
     align-items: center;
+    font-weight: bold;
+    
 }
   
 .categorie_filtre a 
@@ -129,11 +135,13 @@ form i
     margin-right: 1%;
     text-align: center;
     cursor: pointer;
+    margin: 0 1rem;
 }
   
 .categorie_filtre i 
 { 
     color: #0065FC; 
+    
 }
 
 #section_hebergement_populaires
