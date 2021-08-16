@@ -286,6 +286,14 @@ footer
         border-radius: none;
     }
 
+    #hebergement, #activite
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+    }
+
     .photos_hebergement 
     {
         width: 100%;
@@ -307,14 +315,6 @@ footer
     {
         flex-direction: column;
         width: 100%;
-    }
-
-    #hebergement, #activite
-    {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        background-color: white;
     }
 
     .grandes_photos
