@@ -5,6 +5,7 @@
         <meta charset="UTF-8"/>
 		<link rel="stylesheet" type="text/css" href="style.css"/>
         <link rel="stylesheet" type="text/css" href="photos.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="images/logo/Reservia@3x.png" type="images/logo"/>
         <script src="https://kit.fontawesome.com/778d9a9cc5.js" crossorigin="anonymous"></script>
         <title>Site_reservia</title>
@@ -12,18 +13,23 @@
 
     <body>
         <header>
-            <img src="images/logo/Reservia.svg" alt="Logo du site">
+            <div id="header_logo">
+                <img src="images/logo/Reservia.svg" alt="Logo du site">
+            </div>
 
             <nav>
                 <p><a href="#hebergement">Hébergements</a></p>
-                <p><a href="#activite">Activités</a></p>
-                <p><a href="#">S'inscrire</a></p>
+                <p><a href="#activite">Activités</a></p>   
             </nav>
+
+            <p id="s_inscrire"><a href="#">S'inscrire</a></p>
 
         </header> 
 
-        <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
-        <p>En plein centre ville ou en pleine nature</p>
+        <div id="presentation_vacance">
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+        </div>
 
         <form id="formulaire" method="post" action="#">
              
@@ -42,8 +48,8 @@
         <section id="filtre">
              
             
-            <h3>Filtres</h3>
-
+            <h3 id="titre_filtre">Filtres</h3>   
+            
             <div id="liste_filtre">
                 <div class="categorie_filtre">
                 <a href="#"><i class="fas fa-money-bill-wave"></i></a>

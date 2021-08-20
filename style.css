@@ -4,6 +4,19 @@ header
     justify-content: space-between;
     align-items: flex-end;
     margin: 1%;
+    align-items: center;
+}
+
+#header_logo
+{
+        width: 70%;    
+}
+
+
+#s_inscrire
+{
+    width: 10%;
+    color: blue;
 }
 
 body
@@ -17,6 +30,12 @@ nav
     justify-content: space-between;
     align-items: flex-end;
     color: black;
+    margin-right: 5%;
+}
+
+nav a:visited
+{
+    color: blue;
 }
 
 ul
@@ -27,6 +46,7 @@ ul
 nav p
 {
     padding: 2%;
+    color: black;
 }
 
 nav p:hover
@@ -41,14 +61,19 @@ nav p a
     font-weight: bold;
 }
 
+
+#presentation_site
+{
+    margin-top: 0;
+}
+
 #formulaire
 {
     display: flex;
     margin: 1%;
     align-items: center;  
     width: 100%;
-    border-radius: 35%;
-    
+    border-radius: 35%;   
 }
 
 form i
@@ -99,6 +124,11 @@ form i
     margin-right: 2rem;
 }
 
+#titre_filtre
+{
+    margin-right: 3%;
+}
+
 #liste_filtre
 {
     display: flex;
@@ -106,8 +136,6 @@ form i
 
 .categorie_filtre 
 {
-    /*width: 225px;
-    margin: 1%;*/
     border: 2px #F2F2F2 solid;
     border-radius: 2rem;
     margin-right: 2rem;
@@ -121,12 +149,14 @@ form i
 {
     display: block;
     background: #DEEBFF;
-    width: 50px;
-    height: 50px;
+    width: 3rem;
+    height: 3rem;
     border-radius: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 3,5rem;
+    min-height: 3,5rem;
 }
   
 .categorie_filtre p 
@@ -151,7 +181,7 @@ form i
 
 #hebergement
 {
-    width: 100%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2;
@@ -168,6 +198,11 @@ form i
 #photos_haut, #photos_bas
 {
     display: flex;
+}
+
+#hebergement h3, #hebergement h4
+{
+    margin-left: 4%;
 }
 
 #populaires
@@ -246,12 +281,41 @@ footer
         width: 95%;
     }
 
+    header
+    {
+        flex-wrap: wrap;
+    }
+
+    #header_logo
+    {
+        width: 70%;
+    }
+
+    #s_inscrire
+    {
+        width: 30%;
+    }
+
     header nav
     {
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        order: 2;
+        width: 100%;
+        text-align: center;
     }
+
+    header nav p
+    {
+        width: 50%;
+    }
+
+    nav p:hover
+{
+    border-bottom: 1px #0065FC solid;
+    border-top: none;
+}
 
     #filtre
     {
@@ -271,9 +335,16 @@ footer
         flex-wrap: wrap;
     }
 
+
     .categorie_filtre
     {
-        width: 150px;
+        width: 60%;
+        margin-bottom: 1rem;
+    }
+
+    #recherche span
+    {
+        display: none;
     }
 
     #section_hebergement_populaires
@@ -291,7 +362,6 @@ footer
     #populaires
     {
         width: 100%;
-        border-radius: none;
     }
 
     #hebergement, #activite
@@ -308,6 +378,7 @@ footer
         object-fit: cover;
         box-shadow: 0 0 20px #0000002e;
         border-radius: 7%;
+        margin: 3%;
     }
 
     .photos_hebergement img 
@@ -323,42 +394,37 @@ footer
     {
         flex-direction: column;
         width: 100%;
+        height: auto;
     }
 
-    .grandes_photos
-    {
-    width: 100%;
-    height: 100%;
-    border-radius: 7%;
-    object-fit: cover;
-    box-shadow: 0 0 20px #0000002e;
-    }
-
-    .grandes_photos img
+    .col-4
     {
         width: 100%;
-        height : 80%;
-        border-top-left-radius: 7%;
-        border-top-right-radius: 7%;
-        object-fit: cover;
+        margin-bottom: 2%;
     }
 
-    .petites_photos
+    .grandes_photos, .petites_photos
     {
         width: 100%;
-        height: 200px;
+        height: 150px;
+        border-radius: 7%;
         object-fit: cover;
         box-shadow: 0 0 20px #0000002e;
-        border-radius: 7%;
     }
 
-    .petites_photos img
-    {  
+    .grandes_photos img, .petites_photos img
+    {
         width: 100%;
         height : 80%;
         border-top-left-radius: 7%;
         border-top-right-radius: 7%;
         object-fit: cover;
+    }
+
+
+    figure
+    {
+        margin: 0;
     }
 
     footer
