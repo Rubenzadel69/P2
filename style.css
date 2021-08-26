@@ -15,7 +15,12 @@ header
 #s_inscrire
 {
     width: 10%;
-    color: blue;
+}
+
+#s_inscrire a 
+{
+    color: #0065FC;
+    text-decoration: none;
 }
 
 body
@@ -32,12 +37,6 @@ nav
     margin-right: 5%;
 }
 
-nav a:visited
-{
-    /*color: rgb(225, 0, 255);*/
-    color: blue;
-}
-
 ul
 {
     list-style-type: none;
@@ -46,8 +45,8 @@ ul
 nav p
 {
     padding: 2%;
-    color: black;
 }
+
 
 nav p:hover
 {
@@ -55,11 +54,16 @@ nav p:hover
     
 }
 
+nav p a:hover{
+    color: #0065FC;
+}
+
 nav p a
 {
     text-decoration: none;
     padding: 2rem;
     font-weight: bold;
+    color:black
 }
 
 nav p:visited
@@ -86,7 +90,7 @@ header p
     border-radius: 35%;   
 }
 
-form i
+.marker_icon
 {
     border: 2px #F2F2F2 solid;
     display: flex;
@@ -287,7 +291,7 @@ footer
 {
     body
     {
-        width: 95%;
+        margin: 0;
     }
 
     header
@@ -332,6 +336,11 @@ footer
         width: 50%;
     }
 
+    #recherche i
+    {
+        display: block;
+    }
+
     #filtre
     {
         display: flex;
@@ -353,7 +362,6 @@ footer
 
     .categorie_filtre
     {
-        width: 60%;
         margin-bottom: 1rem;
     }
 
@@ -377,7 +385,8 @@ footer
     #populaires
     {
         width: 100%;
-        margin: none;
+        margin: 0;
+        padding: 0;
     }
 
     #hebergement, #activite
@@ -386,6 +395,8 @@ footer
         display: flex;
         flex-direction: column;
         background-color: white;
+        margin: 0%;
+        padding: 0;
     }
 
     .photos_hebergement 
@@ -394,7 +405,7 @@ footer
         object-fit: cover;
         box-shadow: 0 0 20px #0000002e;
         border-radius: 7%;
-        margin: 3%;
+        margin: 0;
     }
 
     .photos_hebergement img 
@@ -413,30 +424,16 @@ footer
         height: auto;
     }
 
+    #activite figcaption
+    {
+        padding: 2%;
+    }
+
     .col-4
     {
         width: 100%;
         margin-bottom: 2%;
     }
-
-    .grandes_photos, .petites_photos
-    {
-        width: 100%;
-        height: 150px;
-        border-radius: 7%;
-        object-fit: cover;
-        box-shadow: 0 0 20px #0000002e;
-    }
-
-    .grandes_photos img, .petites_photos img
-    {
-        width: 100%;
-        height : 80%;
-        border-top-left-radius: 7%;
-        border-top-right-radius: 7%;
-        object-fit: cover;
-    }
-
 
     figure
     {
