@@ -1,7 +1,10 @@
 .photos_hebergement 
 {
-    width: 100%;
-    padding: 1%;
+    margin-bottom: 4%;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 2%;
     background-color: white;
     border-radius: 10%;
 }
@@ -19,7 +22,9 @@
 {
     height: 150px;
     display: flex;
-    padding: 1%;
+    padding: 3%;
+    margin-right: 2%;
+    margin-left: 2%;
     border-radius: 10px;
     background-color: white;
     margin-bottom: 10%;
@@ -73,14 +78,11 @@
 
 @media screen and (max-width: 1200px)
 {
-    .photos_hebergement 
-    {
-        padding: 0;
-    }
 
     .grandes_photos, .petites_photos
     {
         width: 85%;
+        margin: auto;
         height: 150px;
         border-radius: 7%;
         object-fit: cover;

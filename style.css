@@ -389,6 +389,11 @@ footer
         padding: 0;
     }
 
+    #populaire_titre
+    {
+        margin: 3%;
+    }
+
     #hebergement, #activite
     {
         width: 100%;
@@ -397,6 +402,11 @@ footer
         background-color: white;
         margin: 0%;
         padding: 0;
+    }
+
+    #hebergement h2
+    {
+        margin: 3%;
     }
 
     .photos_hebergement 
@@ -415,6 +425,11 @@ footer
         border-top-left-radius: 7%;
         border-top-right-radius: 7%;
         object-fit: cover;
+    }
+
+    #activite h2
+    {
+        margin: 3%;
     }
 
     #encadre_activite
