@@ -2,8 +2,7 @@
 {
     margin-bottom: 4%;
     width: 70%;
-    margin-right: auto;
-    
+    margin-right: 1rem;
     padding: 0.27rem;    
     background-color: white;
     border-radius: 1rem;
@@ -44,7 +43,7 @@
 {
     width: 100%;
     height: 100%;
-    border-radius: 7%;
+    border-radius: 1rem;
     object-fit: cover;
     box-shadow: 0 0 20px #0000002e;
 }
@@ -53,18 +52,18 @@
 {
     width: 100%;
     height: 90%;
-    border-top-left-radius: 7%;
-    border-top-right-radius: 7%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
     object-fit: cover;
 }
 
 .petites_photos
 {
     width: 100%;
-    height: 200px;
+    height: 46%;
     object-fit: cover;
     box-shadow: 0 0 20px #0000002e;
-    border-radius: 7%;
+    border-radius: 1rem;
 }
 
 .petites_photos img
@@ -83,11 +82,11 @@
     {
         width: 85%;
         margin: auto;
-        height: 150px;
-        border-radius: 7%;
+        height: 225px;
+        border-radius: 1rem;
         object-fit: cover;
         box-shadow: 0 0 20px #0000002e;
-        margin-bottom: 10%;
+        margin-bottom: 2rem;
     }
 
     .grandes_photos img, .petites_photos img

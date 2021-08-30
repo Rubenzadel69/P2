@@ -1,11 +1,13 @@
+
 body
 {
-	margin: 1rem;
+    font-family: 'raleway';
 }
 
 #partie_principal
 {
-    margin: 0 auto;
+    margin: auto;
+    margin-top: -1.5rem;
     max-width: 85rem;
 }
 
@@ -37,8 +39,6 @@ header
     padding: 1rem;
 }
 
-
-
 nav
 {
     margin: 0rem;
@@ -46,7 +46,6 @@ nav
     justify-content: space-between;
     align-items: flex-end;
     color: black;
-    margin-right: 2rem;
 }
 
 ul
@@ -57,13 +56,13 @@ ul
 nav p
 {
     padding: 2rem;
+    border-top: 3px transparent solid;
 }
 
 
 nav p:hover
 {
-    border-top: 1px #0065FC solid;
-    
+    border-top: 3px #0065FC solid;    
 }
 
 nav p a:hover
@@ -75,15 +74,12 @@ nav p a
 {
     text-decoration: none;
     padding: 1,5rem;
-    font-weight: bold;
     color:black
 }
 
 nav p:visited
 {
-    
     color: #0065FC;
-    
 }
 
 header p
@@ -101,20 +97,15 @@ header p
     display: inline-flex;
     margin: 1rem;
     align-items: center;  
-    
     max-width: 100%;
     border-radius: 1rem; 
-    
     margin-bottom: 3rem; 
-    overflow: auto;
 }
 
 .marker_icon
 {
-    
     display: flex;
-    text-align: center;
-    
+    text-align: center;   
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
     padding: 1rem;
@@ -125,12 +116,12 @@ header p
 #localisation
 {
     border: #F2F2F2 1px solid;
-    padding: 1 1,25rem;
+    padding-left: 1rem;
     display: inline-block;
     font-size: larger;
     font-weight: bold;
-    
     width: 15rem;
+    height: 2.8rem;
 }
 
 #recherche
@@ -138,8 +129,8 @@ header p
     background-color: #0065FC;
     color: white;
     font-weight: bold;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     display: inline-block;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
@@ -157,7 +148,6 @@ header p
 {
     display: flex;
     align-items: flex-start;
-    align-items: center;
     margin-right: 2rem;
 }
 
@@ -168,7 +158,7 @@ header p
 
 #liste_filtre
 {
-    display: flex;
+    display: flex;   
 }
 
 .categorie_filtre 
@@ -180,6 +170,7 @@ header p
     align-items: center;
     font-weight: bold;
     margin-bottom: 1rem;
+    margin-left: -0.125rem;
 }
   
 .categorie_filtre a 
@@ -194,12 +185,10 @@ header p
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
   
 .categorie_filtre p 
 {
-    width: 80%;
     margin-right: 1%;
     text-align: center;
     cursor: pointer;
@@ -208,8 +197,7 @@ header p
   
 .categorie_filtre i 
 { 
-    color: #0065FC; 
-    
+    color: #0065FC;   
 }
 
 #exclamation
@@ -234,8 +222,9 @@ header p
     flex-direction: column;
     background-color: #F2F2F2;
     margin: 1%;
-    padding: 1%;
-    border-radius: 2%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 1rem;
 }
 
 .etoiles i
@@ -248,9 +237,9 @@ header p
     display: flex;
 }
 
-#hebergement h3, #hebergement h4
+#hebergement h2, #hebergement h3
 {
-    margin-left: 4%;
+    margin-left: 1rem;
 }
 
 #populaires
@@ -280,8 +269,8 @@ header p
 
 #activite
 {
-    margin: 1%;
-    padding: 1%;
+    margin: 1rem;
+    
     width: 95%;
 }
 
@@ -291,13 +280,13 @@ header p
     height: 440px;
     display: flex;
     justify-content: space-between;
-    
 }
 
 .photo_sur_photo
 {
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 #activite figcaption
@@ -309,14 +298,25 @@ header p
 .col-4
 {
     width: 22%;
+    margin-left: -2rem;
 }
 
 footer
 {
     display: flex;
-    justify-content: space-between;
     background-color: #F2F2F2;
-    padding: 1%;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+footer li
+{
+    line-height: 2rem;
+}
+
+footer ul
+{
+    margin-right: 11rem;
 }
 
 @media screen and (max-width: 1200px)
@@ -326,6 +326,11 @@ footer
         margin: 0;
     }
 
+    #partie_principal
+    {
+        margin-top: 1rem;
+    }
+
     header
     {
         flex-wrap: wrap;
@@ -333,7 +338,9 @@ footer
 
     #header_logo
     {
-        width: 70%;
+        width: 50%;
+        margin-left: 1rem;
+        margin-top: 1rem;
     }
 
     #s_inscrire
@@ -359,6 +366,7 @@ footer
     header nav p
     {
         width: 50%;
+/*        border-bottom: 3px gray solid;*/
     }
 
     nav p:hover
@@ -368,32 +376,10 @@ footer
         width: 50%;
     }
 
-    #presentation_vacance
-    {
-        margin: 3%;
-    }
-
     #formulaire
     {
-        margin: 3%;
+        margin-left: 4.5rem;
     }
-
-    #formulaire i
-    {
-        height: 35px;
-    }
-
-    /*#localisation
-    {
-        border: #F2F2F2 1px solid;
-        padding: 1%;
-        display: inline-block;
-        font-size: larger;
-        font-weight: bold;
-        height: 35px;
-        width: 70%;
-        
-    }*/
 
     #recherche i
     {
@@ -419,7 +405,6 @@ footer
         flex-wrap: wrap;
     }
 
-
     .categorie_filtre
     {
         margin-bottom: 1rem;
@@ -430,16 +415,15 @@ footer
         display: none;
     }
 
+    #presentation_vacance
+    {
+        margin: 3%;
+    }
+
     #section_hebergement_populaires
     {
         display: flex;
         flex-direction: column-reverse;  
-    }
-
-    #photos_haut, #photos_bas
-    {
-        display: flex;
-        flex-direction: column;
     }
 
     #populaires
@@ -454,6 +438,12 @@ footer
         margin: 3%;
     }
 
+    #photos_haut, #photos_bas
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
     #hebergement, #activite
     {
         width: 100%;
@@ -462,11 +452,13 @@ footer
         background-color: white;
         margin: 0%;
         padding: 0;
+        margin-top: 2rem;
     }
+
 
     #hebergement h2
     {
-        margin: 3%;
+        margin: 1rem;
     }
 
     .photos_hebergement 
@@ -476,15 +468,22 @@ footer
         box-shadow: 0 0 20px #0000002e;
         border-radius: 7%;
         margin: 0;
+        margin-left: 4rem;
     }
 
     .photos_hebergement img 
     {
         width: 100%;
         height : 80%;
-        border-top-left-radius: 7%;
-        border-top-right-radius: 7%;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
         object-fit: cover;
+    }
+
+    .photos_populaires
+    {
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 
     #activite h2
@@ -497,11 +496,13 @@ footer
         flex-direction: column;
         width: 100%;
         height: auto;
+        padding: 3rem;
     }
 
     #activite figcaption
     {
-        padding: 2%;
+        padding-left: 2rem;
+        padding-top: 1rem;
     }
 
     .col-4
