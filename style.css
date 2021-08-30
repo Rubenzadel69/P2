@@ -1,3 +1,13 @@
+body
+{
+	margin: 1rem;
+}
+
+#partie_principal
+{
+    margin: 0 auto;
+    max-width: 85rem;
+}
 
 header
 {
@@ -27,16 +37,7 @@ header
     padding: 1rem;
 }
 
-body
-{
-	margin: 1rem;
-}
 
-#corps_du_texte
-{
-    margin: 0 auto;
-    max-width: 85rem;
-}
 
 nav
 {
